@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html> 
+
+    <head>
+        <title>Form 1</title>
+    </head>
+    
+    <body>
+
+        <h1>
+            Üyelik İşlemleri
+        </h1>
+
+        <hr>
+
+        <br>
+
+        <form action="" target="_self" method="get" autocomplete="off">
+
+            <fieldset> 
+
+                <legend>Kimlik Bilgileriniz</legend>
+
+                <table border="0">
+
+                    <tr>
+                        <td>Adınız: </td>
+                        <td><input type="text" name="ad" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Soyadınız: </td>
+                        <td><input type="text" name="soyad" required></td>
+                    </tr>
+    
+                    <tr>
+                        <td>T.C. Kimlik Numaranız: </td>
+                        <td><input type="number" name="tc" maxlength="11"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Doğum Tarihiniz: </td>
+                        <td><input type="date" name="tarih"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Doğum Yeriniz: </td>
+                        <td><input type="text" name="dogumyeri"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Cinsiyetiniz: </td>
+                        <td><input id="erkek" type="radio" name="cinsiyet" value="Erkek"><label for="erkek">Erkek</label>
+                            <input id="kadin" type="radio" name="cinsiyet" value="Kadın"><label for="kadin">Kadın</label></td>
+                    </tr>
+
+                    <tr>
+                        <td>Medeni Durumunuz: </td>
+                        <td><input id="evli" type="radio" name="medenihal" value="evli"><label for="evli">Evli</label>
+                            <input id="bekar" type="radio" name="medenihal" value="bekar"><label for="bekar">Bekar</label>
+                            <input id="bosanmis" type="radio" name="medenihal" value="bosanmis"><label for="bosanmis">Boşanmış</label></td>
+                    </tr>
+
+                    <tr>
+                        <td>Mesleğiniz: </td>
+                        <td><select name="meslek"> 
+                            <option value="evhanimi">Ev Hanımı</option>
+                            <option value="ogrenci">Öğrenci</option>
+                            <option value="calisiyor">Çalışıyor</option>
+                            <option value="calismiyor">Çalışmıyor</option></select></td>
+                    </tr>
+
+                </table>
+                
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+
+                <legend>Adres Bilgileriniz</legend>
+
+                <table border="0">
+
+                    <tr>
+                       <td>İl: </td>
+                       <td><input type="text" name="il" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>İlçe: </td>
+                        <td><input type="text" name="ilce" required></td>
+                     </tr>
+
+                     <tr>
+                        <td>Adres: </td>
+                        <td><input type="text" name="adres" required placeholder="Mahalle,Cadde,Site"></td>
+                     </tr>
+
+                </table>
+
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+
+                <legend>İletişim Bilgileriniz</legend>
+
+                <table border="0">
+
+                    <tr>
+                       <td>Telefon Numaranız: </td>
+                       <td><input type="tel" name="tel" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>E-mail Adresiniz: </td>
+                        <td><input type="email" name="email" required></td>
+                     </tr>
+
+                     <tr>
+                        <td>Web Adresiniz: </td>
+                        <td><input type="url" name="webadres" ></td>
+                     </tr>
+
+                </table>
+
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+
+                <legend>Eğitim Bilgileriniz</legend>
+
+                <table border="0">
+
+                    <tr>
+                        <td>Eğitim Durumunuz: </td>
+                        <td>
+                         <select name="egitim">
+                         <option value="Yok">Yok</option>
+                         <option value="ilkokul">İlkokul</option>
+                         <option value="ortaokul">Ortaokul</option>
+                         <option value="lise">Lise</option>
+                         <option value="universite">Üniversite</option>
+                         </select>
+                        </td>
+                     </tr>
+                    
+                    <tr>
+                       <td>Okulunuz: </td>
+                       <td><input type="text" name="okul"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Bölümünüz: </td>
+                        <td><input type="text" name="bolum"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Sınıfınız: </td>
+                        <td>
+                            <select name="sinif" id="sinifID" size="3"> 
+                                <option value="l">1</option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+                                <option value="4">4 </option>
+                                <option value="5">5 </option>
+                                <option value="6">6 </option>
+                                <option value="7">7 </option>
+                                <option value="8">8 </option>
+                                <option value="9">9 </option>
+                                <option value="l0">10</option>
+                                <option value="l1">11</option>
+                                <option value="l2">12</option>
+                            </select>
+                                
+                        </td>
+                     </tr>
+
+                     <tr>
+                        <td>Bildiğiniz Diller: </td>
+                        <td>
+                            <input id="ingilizce" type="checkbox" name="dil" value="İngilizce">
+                            <label for="ingilizce">İngilizce</label>
+
+                            <input id="almanca" type="checkbox" name="dil" value="Almanca">
+                            <label for="almanca">Almanca</label>
+
+                            <input id="fransizca" type="checkbox" name="dil" value="fransizca">
+                            <label for="fransizca">Fransızca</label>
+
+                            <input id="italyanca" type="checkbox" name="dil" value="italyanca">
+                            <label for="italyanca">İtalyanca</label>
+
+                            <input id="diger" type="checkbox" name="dil" value="diger">
+                            <label for="diger">Diğer</label>
+                        </td>
+                     </tr>
+
+                </table>
+
+            </fieldset>
+
+            <br><br>
+
+            <tr>
+                <td><input type="reset" value="Temizle"><input type="submit" value="Kaydet"></td>
+            </tr>
+
+        </form>
+
+    </body>
+
+</html>
