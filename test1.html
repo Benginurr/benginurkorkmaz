@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Test 1</title>
+    </head>
+
+    <body>
+
+        <h1>WEB Programcılığı Testi</h1>
+        <p><i>( Bilgileriniz kontrol edilip notunuz isteğinize göre e-posta adresinize ya da telefonunuza sms olarak gönderilecektir. Başarılar.. )</i></p>
+        <form method="get">
+
+            <fieldset>
+            
+            <legend>Öğrenci Bilgileriniz</legend>
+
+            <table border="0">
+            
+                <tr>
+                    <td>Adınız - Soyadınız: </td>
+                    <td><input type="text" name="adsoyad" required></td>
+                </tr>
+
+                <tr>
+                    <td>T.C. Kimlik Numaranız: </td>
+                    <td><input type="password" name="tcno" required></td>
+                </tr>
+
+                <tr>
+                    <td>E-posta Adresiniz: </td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+
+                <tr>
+                    <td>Okul Numaranız: </td>
+                    <td><input type="number" name="okulno" required></td>
+                </tr>
+
+                <tr>
+                    <td>Bölümünüz: </td>
+                    <td>
+                        <select name="bolum" required> 
+                        <option value="bote">Bilgisayar Öğrt.</option>
+                        <option value="bilgisayarmuhendisliği">Bilgisayar Müh.</option>
+                        <option value="yazilimmuhendisliği">Yazılım Müh.</option>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Fotoğrafınız: </td>
+                    <td><input type="file" name="foto" required></td>
+                </tr>
+
+            </table>
+
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+
+                <legend>Test Soruları</legend>
+
+                <tr>
+                    <td>1.Soru: HTML'nin tam açılımı nedir?</td>
+                    <br>
+                    <td>
+                    <input id="1a" type="radio" name="1soru" value="1a"><label for="1a">Home Tool Markup Language</label><br>
+                    <input id="1b" type="radio" name="1soru" value="1b"><label for="1b">Hyperlinks and Text Markup Language</label><br>
+                    <input id="1c" type="radio" name="1soru" value="1c"><label for="1c">Hyper Text Markup Language</label><br>
+                    <input id="1d" type="radio" name="1soru" value="1d"><label for="1d">Hiper Tool Markup Language</label><br>
+                    </td>
+                </tr>
+
+                <br>
+
+                <tr>
+                    <td>2.Soru: Bir sayfanın başlığı hangi etiket altına yazılır?</td>
+                    <br>
+                    <td>
+                    <input id="2a" type="radio" name="2soru" value="2a"><label for="2a">body</label><br>
+                    <input id="2b" type="radio" name="2soru" value="2b"><label for="2b">title</label><br>
+                    <input id="2c" type="radio" name="2soru" value="2c"><label for="2c">form</label><br>
+                    <input id="2d" type="radio" name="2soru" value="2d"><label for="2d">hr</label><br>
+                    </td>
+                </tr>
+
+                <br>
+
+                <tr>
+                    <td>3.Soru: Hangisi bir web sitesinin ana sayfasının dosya adıdır?</td>
+                    <br>
+                    <td>
+                    <input id="3a" type="radio" name="3soru" value="3a"><label for="3a">anasayfa.html</label><br>
+                    <input id="3b" type="radio" name="3soru" value="3b"><label for="3b">anasayfa.htm</label><br>
+                    <input id="3c" type="radio" name="3soru" value="3c"><label for="3c">birincisayfa.html</label><br>
+                    <input id="3d" type="radio" name="3soru" value="3d"><label for="3d">index.html</label><br>
+                    </td>
+                </tr>
+
+                <br>
+
+                <tr>
+                    <td>4.Soru: Yazıyı kalın yapmaya yarayan etiket hangisidir?</td>
+                    <br>
+                    <td>
+                    <input id="4a" type="radio" name="4soru" value="4a"><label for="4a">u</label><br>
+                    <input id="4b" type="radio" name="4soru" value="4b"><label for="4b">i</label><br>
+                    <input id="4c" type="radio" name="4soru" value="4c"><label for="4c">br</label><br>
+                    <input id="4d" type="radio" name="4soru" value="4d"><label for="4d">b</label><br>
+                    </td>
+                </tr>
+
+                <br>
+
+                <tr>
+                    <td>5.Soru: Alt satıra geçmek için kullanılan etiket hangisidir?</td>
+                    <br>
+                    <td>
+                    <input id="5a" type="radio" name="5soru" value="5a"><label for="5a">hr</label><br>
+                    <input id="5b" type="radio" name="5soru" value="5b"><label for="5b">br</label><br>
+                    <input id="5c" type="radio" name="5soru" value="5c"><label for="5c">center</label><br>
+                    <input id="5d" type="radio" name="5soru" value="5d"><label for="5d">p</label><br>
+                    </td>
+                </tr>
+
+                <br>
+
+                <tr>
+                    <td>6.Soru: HTML'de linkin yeni bir sayfada açılması için hangi parametre kullanılır?</td>
+                    <br>
+                    <td>
+                    <input id="6a" type="radio" name="6soru" value="6a"><label for="6a">target="_blank"</label><br>
+                    <input id="6b" type="radio" name="6soru" value="6b"><label for="6b">target="_new"</label><br>
+                    <input id="6c" type="radio" name="6soru" value="6c"><label for="6c">target="_self"</label><br>
+                    <input id="6d" type="radio" name="6soru" value="6d"><label for="6d">target="_top"</label><br>
+                    </td>
+                </tr>
+
+                <br>
+
+                <tr>
+                    <td>7.Soru: Tabloda yeni bir sütun oluşturmak için kullanılan etiket hangisidir?</td>
+                    <br>
+                    <td>
+                    <input id="7a" type="radio" name="7soru" value="7a"><label for="7a">td</label><br>
+                    <input id="7b" type="radio" name="7soru" value="7b"><label for="7b">tr</label><br>
+                    <input id="7c" type="radio" name="7soru" value="7c"><label for="7c">th</label><br>
+                    <input id="7d" type="radio" name="7soru" value="7d"><label for="7d">ts</label><br>
+                    </td>
+                </tr>
+
+                <br>
+
+                <tr>
+                    <td>8.Soru: Web sayfalarındaki resimlerin üzerine gelince fare imlecinin altında yazı çıkmasını hangi parametre sağlar?</td>
+                    <br>
+                    <td>
+                    <input id="8a" type="radio" name="8soru" value="8a"><label for="8a">widht</label><br>
+                    <input id="8b" type="radio" name="8soru" value="8b"><label for="8b">height</label><br>
+                    <input id="8c" type="radio" name="8soru" value="8c"><label for="8c">border</label><br>
+                    <input id="8d" type="radio" name="8soru" value="8d"><label for="8d">alt</label><br>
+                    </td>
+                </tr>
+
+                <br>
+
+                <tr>
+                    <td>9.Soru: Hazırlamakta olduğunuz forma, şifreli alanlar eklemek için hangisi kullanılır?</td>
+                    <br>
+                    <td>
+                    <input id="9a" type="radio" name="9soru" value="9a"><label for="9a">checkbox</label><br>
+                    <input id="9b" type="radio" name="9soru" value="9b"><label for="9b">submit</label><br>
+                    <input id="9c" type="radio" name="9soru" value="9c"><label for="9c">text</label><br>
+                    <input id="9d" type="radio" name="9soru" value="9d"><label for="9d">password</label><br>
+                    </td>
+                </tr>
+
+                <br>
+
+                <tr>
+                    <td>10.Soru: Hangisi checkbox oluşturmak için kullanılan doğru yöntemdir?</td>
+                    <br>
+                    <td>
+                    <input id="10a" type="radio" name="10soru" value="10a"><label for="10a">checkbox</label><br>
+                    <input id="10b" type="radio" name="10soru" value="10b"><label for="10b">input type="check"</label><br>
+                    <input id="10c" type="radio" name="10soru" value="10c"><label for="10c">check</label><br>
+                    <input id="10d" type="radio" name="10soru" value="10d"><label for="10d">input type="checkbox"</label><br>
+                    </td>
+                </tr>
+
+            </fieldset>
+
+            <br><br>
+
+            <tr>
+                <td>Test yapılış zamanı: </td>
+                <td><input type="datetime-local" name="tarih" required></td>
+            </tr>
+
+            <br>
+
+            <tr>
+                <td>Notunuz nereye gönderilsin?: </td>
+                <td>
+                    <input id="sms" type="checkbox" name="gonderimsekli" value="sms">
+                    <label for="sms">Sms</label>
+                    <input id="e-posta" type="checkbox" name="gonderimsekli" value="e-posta">
+                    <label for="e-posta">E-posta</label>
+                </td>
+            </tr>
+
+            <br>
+
+            <tr>
+                <td>Soruları puanlayınız (1-5 arası): </td>
+                <td><input type="range" name="puan" min="0" max="5"></td>
+            </tr>
+
+            <br><br>
+
+            <tr>
+                <td>
+                <input type="reset" value="Temizle">
+                <input type="submit" value="Gönder">
+            </td>
+            </tr>
+
+        </form>
+
+    </body>
+
+</html>
