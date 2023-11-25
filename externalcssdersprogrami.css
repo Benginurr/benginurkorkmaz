@@ -1,0 +1,22 @@
+body
+
+        table { border: 3px solid black;
+                    border-collapse: collapse; }
+
+
+        table td {  border: 2px solid black; 
+                        height: 50px;
+                        width: 200px;}
+
+        .bte113 { background-color: pink; }
+        .egt304 { background-color: orange; }
+        .gks107 { background-color: burlywood;}
+        .bte311 { background-color: lightblue;}
+        .bte307 { background-color: yellowgreen;}
+        .bte309 { background-color: yellow;}
+        .egt350 { background-color: plum;}
+        .egt303 { background-color: orchid;}
+        .gks105 { background-color: antiquewhite;}
+
+        tr:nth-child(1) { background-color: lightgrey; }
+        td:nth-child(1) { background-color: lightgrey; }
