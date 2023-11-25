@@ -12,6 +12,8 @@
           height: 200px;  
           border-radius: 50%; 
           opacity: 0.5;
+          position: absolute;
+          z-index: -1;
           display: inline-block; }
 
 #daire3 { background-color: yellow;
