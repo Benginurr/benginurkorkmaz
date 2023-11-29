@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html> 
+
+    <head>
+
+        <title>Grid Layout</title>
+
+        <style>
+
+            .flex-container {   display: flex; 
+                                flex-direction: row;
+                                row-gap: 5px;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                align-items: baseline;
+                                align-content: space-between;
+                                align-self: center; }
+
+            .A {width: 200px;
+                height: 100px;
+                font-size: 30px;
+                line-height: 100px;
+                text-align: center;
+                background-color: blue;
+                color:white; 
+                flex-basis: 100%;
+                align-self: center }
+
+            .B {width: 200px;
+                height: 100px;
+                font-size: 30px;
+                line-height: 100px;
+                text-align: center;
+                background-color: darkorange;
+                color:white; 
+                flex-basis: 33%;
+                align-self: center }
+
+            .C {width: 200px;
+                height: 100px;
+                font-size: 30px;
+                line-height: 100px;
+                text-align: center;
+                background-color: rgb(51, 189, 36);
+                color:white; 
+                flex-basis: 33%;
+                align-self: center }
+
+            .D {width: 200px;
+                height: 100px;
+                font-size: 30px;
+                line-height: 100px;
+                text-align: center;
+                background-color: rgb(241, 13, 13);
+                color:white; 
+                flex-basis: 33%;
+                align-self: center }
+
+            .E {width: 200px;
+                height: 100px;
+                font-size: 30px;
+                line-height: 100px;
+                text-align: center;
+                background-color: rgb(247, 192, 14);
+                color:white; 
+                flex-basis: 66.5%; }
+
+            .F {width: 200px;
+                height: 100px;
+                font-size: 30px;
+                line-height: 100px;
+                text-align: center;
+                background-color: purple;
+                color:white; 
+                flex-basis: 33%; }
+
+            .G {width: 200px;
+                height: 100px;
+                font-size: 30px;
+                line-height: 100px;
+                text-align: center;
+                background-color: green;
+                color:white; 
+                flex-basis: 100%;
+                align-self: flex-end }
+            
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="flex-container">
+            <div class="A">A</div> 
+            <div class="B">B</div> 
+            <div class="C">C</div> 
+            <div class="D">D</div> 
+            <div class="E">E</div> 
+            <div class="F">F</div>
+            <div class="G">G</div>
+        </div>
+            
+    </body>
+
+</html>
