@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html> 
+
+    <head>
+
+        <title>Animasyon</title>
+
+      <style>
+                @keyframes birincikutu { 0%   {left: 0;}
+                                         50%  {left: 100px;}
+                                         100% {left: 0;} }
+
+                div.birincikutu {width: 100px;
+                                height: 100px;
+                                background-color: blueviolet;
+                                border-radius: 50%;
+                                position: relative;
+                                animation-direction: normal;
+                                animation-name: birincikutu;
+                                animation-duration: 5s;
+                                animation-iteration-count: infinite; }
+
+                @keyframes ikincikutu { 0%   {left:0px; top:0px; }
+                                        50%  {left:0px; top:100px; }
+                                        100% {left:0px; top:0px;} }
+
+                div.ikincikutu {width: 100px;
+                                height: 100px;
+                                background-color: green;
+                                border-radius: 50%;
+                                position: relative;
+                                animation-direction: alternate;
+                                animation-name: ikincikutu;
+                                animation-duration: 5s;
+                                animation-iteration-count: infinite; }
+
+                @keyframes ucuncukutu { 0%   {background-color: pink; transform: scale(1);}
+                                        50%  {background-color: palevioletred; transform: scale(1.5);}
+                                        100% {background-color: pink; transform: scale(1);} }
+
+                div.ucuncukutu {width: 100px;
+                                height: 100px;
+                                margin-top: 120px;
+                                background-color: pink;
+                                border-radius: 50%;
+                                position: relative;
+                                animation-direction: alternate;
+                                animation-name: ucuncukutu;
+                                animation-duration: 5s;
+                                animation-iteration-count: infinite; }
+
+                @keyframes dorduncukutu { 0% { background-color: rgba(0, 123, 255, 1); }
+                                          50% { background-color: rgba(0, 123, 255, 0.5); }
+                                          100% { background-color: rgba(0, 123, 255, 1); } }
+
+                div.dorduncukutu {width: 100px;
+                                  height: 100px;
+                                  margin-top: 50px;
+                                  background-color: rgba(0, 123, 255, 1);
+                                  border-radius: 50%;
+                                  position: relative;
+                                  animation-direction: alternate;
+                                  animation-name: dorduncukutu;
+                                  animation-duration: 5s;
+                                  animation-iteration-count: infinite; }
+
+                @keyframes besincikutu { 0% { transform: rotate(0deg); }
+                                         100% { transform: rotate(360deg); } }
+
+                div.besincikutu { width: 100px;
+                                  height: 100px;
+                                  margin-top: 50px;
+                                  background-color: orange;
+                                  position: relative;
+                                  animation-direction: alternate;
+                                  animation-name: besincikutu;
+                                  animation-duration: 5s;
+                                  animation-iteration-count: infinite; }
+
+                
+      </style>  
+
+    </head>
+
+    <body>
+       <div class="birincikutu"> </div>
+       <br>
+       <div class="ikincikutu"> </div>
+       <br>
+       <div class="ucuncukutu"> </div>
+       <br>
+       <div class="dorduncukutu"> </div>
+       <br>
+       <div class="besincikutu"> </div>
+
+    </body>
+
+</html>
