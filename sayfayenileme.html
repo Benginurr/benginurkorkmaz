@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html> 
+
+    <head>
+
+        <title>Sayfayı Yenile</title>
+
+        <style>
+            .daire {border-radius: 50%;
+                    overflow: hidden;
+                    width: 200px;
+                    height: 200px;}
+
+            .daire img {display: block;
+                        min-width: 100%;
+                        min-height: 100%;
+                        background-size: cover;
+                        background-position: center;}
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="daire">
+            <img src="resim1.jpg" width="200" id="res"/>
+        </div>
+
+        <script>
+            window.addEventListener('load', function() {
+            var body = document.querySelector('body');
+            var colors = ['red', 'blue', 'green', 'yellow', 'black', 'pink', 'orange', 'purple', 'darkgrey']; 
+            var image1 = ['resim1.jpg', 'resim2.jpg', 'resim3.jpg', 'resim4.jpg', 'resim5.jpg', 'resim6.jpg', 'resim7.jpg', 'resim8.jpg', 'resim9.jpg', 'resim10.jpg'];
+            var randomColor = colors[Math.floor(Math.random() * colors.length)]; 
+            var randomimage = image1[Math.floor(Math.random() * image1.length)]; 
+            body.style.backgroundColor = randomColor;
+            document.getElementById("res").src =randomimage;
+            alert(randomimage); });
+            
+        </script>
+
+        <br>
+        
+    <table>
+
+    <tr>
+        <td>
+            <button onclick="document.getElementById('resim').src='civciv1.jpg'">Turn on the light</button>
+            <img id="resim" src="pic_bulboff.gif" style="width:100px">
+            <button onclick="document.getElementById('resim').src='civciv2.jpg'">Turn off the light</button>
+        </td>
+
+        <td>
+            <button onclick="document.getElementById('resim2').src='civciv3.jpg'">Turn on the light</button>
+            <img id="resim2" src="pic_bulboff.gif" style="width:100px">
+            <button onclick="document.getElementById('resim2').src='civciv4.jpg'">Turn off the light</button>
+        </td>
+
+        <td>
+            <button onclick="document.getElementById('resim3').src='civciv5.jpg'">Turn on the light</button>
+            <img id="resim3" src="pic_bulboff.gif" style="width:100px">
+            <button onclick="document.getElementById('resim3').src='civciv6.jpg'">Turn off the light</button>
+        </td>
+    </tr>
+
+</table>
+       
+    </body>
+
+</html>
