@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas İle Kare Çizimi</title>
+    <style>
+        .kare {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas">
+        
+        <script>
+            for (var i = 0; i < 10; i++) {
+                for (var j = 0; j < 10; j++) {
+                    var r = Math.floor(Math.random() * 256);
+                    var g = Math.floor(Math.random() * 256);
+                    var b = Math.floor(Math.random() * 256);
+                    var renk = "rgb(" + r + ", " + g + ", " + b + ")";
+                    var kare = document.createElement("div");
+                    kare.className = "kare";
+                    kare.style.backgroundColor = renk;
+                    document.getElementById("canvas").appendChild(kare);
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
